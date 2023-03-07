@@ -18,9 +18,9 @@ module Unit
 
       def represent
         payload = {
-          individual: @individual,
-          officer : @officer,
-          beneficial_owners: @beneficial_owners
+          individual: individual,
+          officer: officer,
+          beneficial_owners: beneficial_owners
         }
         payload.compact
       end
