@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+require "unit/types/application_form_prefill"
+require "unit/types/application_form_settings_override"
+require "unit/types/require_id_verification"
+
 # Request to create an individual application
 # @see https://docs.unit.co/application-forms/#create-application-form
 module Unit

@@ -48,6 +48,7 @@ module Unit
     autoload :PowerOfAttorneyAgent, "unit/types/power_of_attorney_agent"
     autoload :Relationship, "unit/types/relationship"
     autoload :RelationshipArray, "unit/types/relationship_array"
+    autoload :RequireIdVerification, "unit/types/require_id_verification"
     autoload :RestrictedResource, "unit/types/restricted_resource"
     autoload :DocumentFileType, "unit/types/document_file_type"
     autoload :Coordinates, "unit/types/coordinates"
