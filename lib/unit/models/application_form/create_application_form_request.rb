@@ -7,7 +7,7 @@ require "unit/types/require_id_verification"
 # Request to create an individual application
 # @see https://docs.unit.co/application-forms/#create-application-form
 module Unit
-  module Application
+  module ApplicationForm
     class CreateApplicationFormRequest
       attr_reader :tags, :applicant_details, :allowed_application_types, :lang,
                   :settings_override, :require_id_verification, :hide_application_progress_tracker
