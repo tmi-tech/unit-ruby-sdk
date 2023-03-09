@@ -59,7 +59,7 @@ module Unit
       def represent
         payload = {
           applicationType: application_type,
-          fullName: full_name.represent,
+          fullName: full_name&.represent,
           ssn: ssn,
           passport: passport,
           nationality: nationality,
@@ -68,15 +68,15 @@ module Unit
           name: name,
           stateOfIncorporation: state_of_incorporation,
           entityType: entity_type,
-          contact: contact.represent,
-          officer: officer.represent,
-          beneficialOwners: beneficial_owners.map(&:represent),
+          contact: contact&.represent,
+          officer: officer&.represent,
+          beneficialOwners: beneficial_owners&.map(&:represent),
           website: website,
           dba: dba,
           ein: ein,
-          industry: industry.represent,
-          address: address.represent,
-          phone: phone.represent,
+          industry: industry&.represent,
+          address: address&.represent,
+          phone: phone&.represent,
           jwtSubject: jwt_subject
         }
         payload.compact
