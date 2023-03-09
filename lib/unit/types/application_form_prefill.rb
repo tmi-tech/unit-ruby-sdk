@@ -30,10 +30,10 @@ module Unit
       # @param optional address [Address] Address of the individual / Address of the business.
       # @param optional phone [Phone] Phone number of the individual / Phone number of the business.
       # @param optional jwt_subject [String] The JWT subject of the authorized user. See https://docs.unit.co/customer-api-tokens/#customers-create-customer-bearer-token-jwt
-      def initialize(application_type = nil, full_name = nil, ssn = nil, passport = nil, nationality = nil,
-                     date_of_birth = nil, email = nil, name = nil, state_of_incorporation = nil, entity_type = nil,
-                     contact = nil, officer = nil, beneficial_owners = nil, website = nil, dba = nil, ein = nil,
-                     industry = nil, address = nil, phone = nil, jwt_subject = nil)
+      def initialize(application_type: nil, full_name: nil, ssn: nil, passport: nil, nationality: nil,
+                     date_of_birth: nil, email: nil, name: nil, state_of_incorporation: nil, entity_type: nil,
+                     contact: nil, officer: nil, beneficial_owners: nil, website: nil, dba: nil, ein: nil,
+                     industry: nil, address: nil, phone: nil, jwt_subject: nil)
         @application_type = application_type
         @full_name = full_name
         @ssn = ssn
